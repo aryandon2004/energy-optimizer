@@ -3,6 +3,8 @@ from fastapi.middleware.cors import CORSMiddleware
 import joblib
 import os
 
+print("🚀 MAIN FILE LOADED") # ADDED THIS
+
 app = FastAPI()
 
 # ✅ CORS FIX (IMPORTANT)
@@ -22,6 +24,8 @@ model = joblib.load(model_path)
 @app.get("/")
 def home():
     return {"message": "Energy Optimizer API Running"}
+
+print("✅ Predict route registered") #ADDED THIS
 
 
 @app.get("/predict")

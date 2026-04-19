@@ -228,7 +228,7 @@ dist/
 *.sqlite3
 
 # Model files (if large)
-
+model/*.pkl
 model/*.h5
 model/*.joblib
 
