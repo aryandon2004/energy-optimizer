@@ -19,7 +19,7 @@ function App() {
     let res;
     try {
       res = await axios.get(
-        `http://localhost:8000/predict?hour=${hour}&day=${day}&device=${device}`
+        `https://energy-optimizer-c1iv.onrender.com/predict?hour=${hour}&day=${day}&device=${device}`
       );
 
       console.log("API Response:", res.data);
